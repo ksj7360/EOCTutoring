@@ -1,0 +1,16 @@
+* {margin: 0; padding: 0;}
+.sidebar {background: #ccc; width:256px;height:100vh;}
+.sidebar .inner {padding: 20px 10px; position: relative;}
+.sidebar h3 {font-size: 2.2rem; margin-bottom:20px;}
+.sidebar ul li{font-size:18px; line-height:1;}
+.sidebar ul li+li{margin-top:10px;}
+.sidebar ul li:hover {color:#666; transition:0.3s; cursor: poiner;}
+
+.closeBtn {position:absolute; right:-60px; top:10px; width:40px; height:40px; line-height:40px; text-align: center; border:1px solid #000;}
+.closeBtn xi {line-height:40px; font-size:20px;}
+sidebar:after {position: absolute; right:0; top:0; content: ''; width:100%; height:100vh; background: rgba(0,0,0,0.5); z-indes: -1; opacity: 0; transition: 0.8s;}
+
+.sidebar {margin-left:250px; trnsition:0.3s;}
+.sidebar.show {margin-left:0}
+.sidebar.show:after {opacity:1;}
+.subMenu {display: none;}
